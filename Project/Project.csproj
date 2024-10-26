@@ -135,5 +135,32 @@
   <ItemGroup>
     <Resource Include="pt.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="wrd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Paper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="абзац.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="шрифт-размер.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pngegg.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

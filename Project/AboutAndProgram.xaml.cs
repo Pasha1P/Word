@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,6 +29,17 @@ namespace Project
         {
             Close();
         }
-
+        void irina51a(object sender, RoutedEventArgs e)
+        {
+            Process.Start("https://vk.com/irina51a"); //открытие ссылки в браузере
+        }
+        void pasha_p2(object sender, RoutedEventArgs e)
+        {
+            Process.Start("https://vk.com/pasha_p2"); //открытие ссылки в браузере
+        }
+        void id279235945(object sender, RoutedEventArgs e)
+        {
+            Process.Start("https://vk.com/id279235945"); //открытие ссылки в браузере
+        }
     }
 }

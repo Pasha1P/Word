@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Project"
         mc:Ignorable="d"
-        Title="AboutAndProgram" Height="450" Width="800" ResizeMode="NoResize">
+        Title="AboutAndProgram" Height="461" Width="800" ResizeMode="NoResize">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="White" Offset="0.279"/>
+            <GradientStop Color="#FF2649D1" Offset="1"/>
+        </LinearGradientBrush>
+
+    </Window.Background>
     <Grid>
-        <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="#FF4D6CE5" Offset="0.099"/>
-                <GradientStop Color="White" Offset="1"/>
-                <GradientStop Color="#FFD189F0" Offset="0.51"/>
-            </LinearGradientBrush>
-        </Grid.Background>
         <Button Content="Назад" HorizontalAlignment="Center" Height="46" Margin="0,338,0,0" VerticalAlignment="Top" Width="168" Click="Exit_Click">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
@@ -22,15 +22,26 @@
             </Button.Resources>
             <Button.Background>
                 <RadialGradientBrush>
-                    <GradientStop Color="#FFD63C84"/>
+                    <GradientStop Color="Red" Offset="0.119"/>
                     <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="#FFF37474" Offset="0.529"/>
                 </RadialGradientBrush>
             </Button.Background>
         </Button>
-        <Image Margin="623,7,5,255" Source="/ptichka.png" Stretch="Fill" RenderTransformOrigin="0.535,-0.225"/>
-        <Label Content="О программе ~Редактирование~" HorizontalAlignment="Left" Margin="168,79,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code Light" FontSize="24" Foreground="#FF081358"/>
-        <Label Content="Разработали: Погудин Павел, Волобуева Ирина, Мелехов Игорь" HorizontalAlignment="Left" Margin="30,150,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code Light" FontSize="16" Foreground="#FF081358"/>
-        <Label Content="Связаться с нами можно через вк и тг: " HorizontalAlignment="Left" Margin="30,197,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code Light" FontSize="16" Foreground="#FF081358"/>
+        <Label Content="О программе ~Редактирование~" HorizontalAlignment="Left" Margin="168,79,0,0" VerticalAlignment="Top" FontFamily="Sitka Text" FontSize="24" Foreground="#FF0023FF" Background="Transparent"/>
+        <Label Content="Разработали: Погудин Павел, Волобуева Ирина, Мелехов Игорь" HorizontalAlignment="Left" Margin="30,160,0,0" VerticalAlignment="Top" FontFamily="Sitka Text" FontSize="20" Foreground="#FF081358"/>
+        <Label Content="Связаться с нами можно через вк: " HorizontalAlignment="Left" Margin="30,0,0,0" VerticalAlignment="Center" FontFamily="Sitka Text" FontSize="20" Foreground="#FF081358"/>
 
+        <TextBlock Margin="62,240,579,173" FontFamily="Sitka Text" FontSize="20">
+            <Hyperlink Click="pasha_p2">Погудин Павел</Hyperlink>
+        </TextBlock>
+
+        <TextBlock Margin="230,240,396,173" FontFamily="Sitka Text" FontSize="20">
+            <Hyperlink Click="irina51a">Волобуева Ирина</Hyperlink>
+        </TextBlock>
+
+        <TextBlock Margin="418,240,208,173" FontFamily="Sitka Text" FontSize="20">
+            <Hyperlink Click="id279235945">Мелехов Игорь</Hyperlink>
+        </TextBlock>
     </Grid>
 </Window>

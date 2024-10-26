@@ -6,15 +6,14 @@
         xmlns:local="clr-namespace:Project"
         mc:Ignorable="d"
         Title="Редактор" Height="450" Width="800" ResizeMode="NoResize">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="White" Offset="0.279"/>
+            <GradientStop Color="#FF2649D1" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
     <Grid>
-        <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="#FF4D6CE5" Offset="0.099"/>
-                <GradientStop Color="White" Offset="1"/>
-                <GradientStop Color="#FFD189F0" Offset="0.51"/>
-            </LinearGradientBrush>
-        </Grid.Background>
-        <Button Content="Выход" HorizontalAlignment="Left" Height="46" Margin="232,332,0,0" VerticalAlignment="Top" Width="168" Click="Exit_Click">
+        <Button Content="Выход" HorizontalAlignment="Left" Height="46" Margin="171,330,0,0" VerticalAlignment="Top" Width="168" Click="Exit_Click">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
@@ -22,37 +21,19 @@
             </Button.Resources>
             <Button.Background>
                 <RadialGradientBrush>
-                    <GradientStop Color="#FFD63C84"/>
+                    <GradientStop Color="Red" Offset="0.119"/>
                     <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="#FFF37474" Offset="0.529"/>
                 </RadialGradientBrush>
             </Button.Background>
         </Button>
-        <Image Margin="558,179,21,15" Source="/pt.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="378.759"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
-        <Image Margin="637,38,39,304" Source="/mail.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-12.818"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
-        <Grid x:Name="dropZoneGrid" DragOver="dropZoneGrid_DragOver" Drop="dropZoneGrid_Drop" Margin="129,156,297,155" AllowDrop="True" Background="White">
+        <Grid x:Name="dropZoneGrid" DragOver="dropZoneGrid_DragOver" Drop="dropZoneGrid_Drop" Margin="130,151,400,150" AllowDrop="True" Background="White">
+            <Image Margin="80,23,80,24" Source="/document.png" Stretch="Fill"/>
             <!-- Your drop zone content here -->
         </Grid>
-        <Label Content="Поместите, пожалуйста, свой файл сюда!" HorizontalAlignment="Left" Margin="88,77,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code Light" FontSize="20" Foreground="#FF081358"/>
+        <Label Content="Поместите, пожалуйста, свой файл сюда!" HorizontalAlignment="Left" Margin="55,77,0,0" VerticalAlignment="Top" FontFamily="Sitka Text" FontSize="20" Foreground="#FF0023FF"/>
         <DockPanel>
-            <Menu Height="25" VerticalAlignment="Top" Background="#FF4D6CE5">
+            <Menu Height="25" VerticalAlignment="Top">
                 <MenuItem Header="Файл">
                     <MenuItem Header="Выход" Click="Exit2_Click"></MenuItem>
                 </MenuItem>
@@ -62,5 +43,17 @@
                 </MenuItem>
             </Menu>
         </DockPanel>
+        <Image Margin="27,127,691,274" Source="/pngegg.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="30.66"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Margin="487,48,25,46" Source="/абзац.png" Stretch="Fill"/>
+        <Image Margin="431,305,105,32" Source="/шрифт-размер.png" Stretch="Fill"/>
     </Grid>
 </Window>

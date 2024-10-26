@@ -6,16 +6,15 @@
         xmlns:local="clr-namespace:Project"
         mc:Ignorable="d"
         Title="Редактор" Height="450" Width="800" ResizeMode="NoResize">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="White" Offset="0.279"/>
+            <GradientStop Color="#FF2649D1" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
     <Grid Margin="0,0,0,-6">
-        <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="#FF4D6CE5" Offset="0.099"/>
-                <GradientStop Color="White" Offset="1"/>
-                <GradientStop Color="#FFD189F0" Offset="0.51"/>
-            </LinearGradientBrush>
-        </Grid.Background>
-        <Label Content="Добро пожаловать в приложение!" HorizontalAlignment="Center" Margin="0,114,0,0" VerticalAlignment="Top" Background="#00000000" FontFamily="Cascadia Mono Light" FontSize="24" Foreground="#FF411445"/>
-        <Label Content="Приложение предназначено для обработки ващего word-файла!" HorizontalAlignment="Center" Margin="0,188,0,0" VerticalAlignment="Top" FontFamily="Cascadia Code Light" FontSize="16" Foreground="#FF081358"/>
+        <Label Content="Добро пожаловать в приложение!" HorizontalAlignment="Center" Margin="0,137,0,0" VerticalAlignment="Top" FontSize="26" FontFamily="Sitka Text" Foreground="#FF3100FF" />
+        <Label Content="Приложение предназначено для обработки ващего word-файла!" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Sitka Text" FontSize="20" Foreground="#FF081358"/>
         <Button Content="Вход" HorizontalAlignment="Left" Height="46" Margin="211,318,0,0" VerticalAlignment="Top" Width="168" Click="Entrance_Click">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
@@ -24,8 +23,9 @@
             </Button.Resources>
             <Button.Background>
                 <RadialGradientBrush>
-                    <GradientStop Color="#FFB0DA9E" Offset="0.01"/>
+                    <GradientStop Color="#FF119510" Offset="0.054"/>
                     <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="#FF50CC3E" Offset="0.433"/>
                 </RadialGradientBrush>
             </Button.Background>
         </Button>
@@ -37,34 +37,15 @@
             </Button.Resources>
             <Button.Background>
                 <RadialGradientBrush>
-                    <GradientStop Color="#FFD14C8B"/>
+                    <GradientStop Color="Red" Offset="0.119"/>
                     <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="#FFF37474" Offset="0.529"/>
                 </RadialGradientBrush>
             </Button.Background>
+
         </Button>
-        <Image Margin="48,29,578,204" Source="/pngwing.com (1).png" Stretch="Fill"/>
-        <Image Margin="70,258,647,124" Source="/pochta.png" Stretch="Fill" RenderTransformOrigin="0.522,0.498">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-21.33"/>
-                    <TranslateTransform X="-0.108" Y="0.749"/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
-        <Image Margin="659,46,27,308" Source="/poch.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="39.096"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
         <DockPanel>
-            <Menu Height="25" VerticalAlignment="Top" Background="#FF4D6CE5">
+            <Menu Height="25" VerticalAlignment="Top">
                 <MenuItem Header="Файл">
                     <MenuItem Header="Вход" Click="Entrance2_Click"></MenuItem>
                     <MenuItem Header="Выход" Click="Exit2_Click"></MenuItem>
@@ -75,5 +56,17 @@
                 </MenuItem>
             </Menu>
         </DockPanel>
+        <Image Margin="628,50,72,299" Source="/wrd.png" Stretch="Fill"/>
+        <Image Margin="67,260,641,88" Source="/Paper.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-7.661"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Margin="124,254,589,122" Source="/pencil.png" Stretch="Fill"/>
     </Grid>
 </Window>
